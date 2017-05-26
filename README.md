@@ -19,6 +19,8 @@ There's some terminal commands you will need to run to get the app to launch loc
 
 Once you have navigated to the correct directory, you will run the following commands:
 
+---A note before you run these commands. You will need to add your own '.env' file containing your own API key. If you don't have a key already, you can sign up on https://developer.betterdoctor.com/ and get your key for free!---
+
 * $bower init
 * $npm init
 * $bower install
