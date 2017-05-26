@@ -3,7 +3,7 @@
 This javascript web app allows users to input a medical issue and get all the nearby doctors who specialize in treating it.
 
 ### Landing Page:
-![](./img/readme_screenshot.jpg?raw=true "Doctor Search")
+![](./imgs/readme_screenshot.jpg?raw=true "Doctor Search")
 
 ### Prerequisites
 
