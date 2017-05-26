@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="build/css/styles.css">
     <title>Doctor Search</title>
   </head>
   <body>
-    <div class="container">
-      <p>Hello World</p>
+    <div id="header">
+      <h1>Local Doctor Search</h1>
     </div>
+    <div class="container">
+      <input class="form-control" id="symptom" type="text" placeholder="Enter Symptom">
+      <button class="btn btn-block" id="find-doctors">Find Doctors</button>
+      <div class="showDoctors"></div>
+    </div>
+    <ul id="doctor-list">
+    </ul>
   </body>
 </html>
