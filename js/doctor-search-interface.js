@@ -6,6 +6,14 @@ $(document).ready(function() {
     e.preventDefault();
     var symptom = $('#symptom').val();
     var test = doctors.getDoctors(symptom);
-    console.log(test);
+    $('#symptom').val(" ");
+    $('#search-field').hide();
+    $('#clear-doctors').show();
+  });
+  $('#clear-doctors').click(function(e) {
+    e.preventDefault();
+    $('ul').empty();
+    $('#search-field').show();
+    $('#clear-doctors').hide();
   });
 });

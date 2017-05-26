@@ -1,14 +1,58 @@
+$find-doctors : #89C6DE;
+$fd-hover : #44636f;
+$clear-doctors : #8d0736;
+$cd-hover : #c6839a;
+$background : #fcfcf7;
+$header-border : #7e7e7b;
+
 body {
+  background-color: $background;
   #header {
     height: 100px;
     text-align: center;
     padding-top: 10px;
-    background-color: lightgrey;
+    background-color: white;
+    border-bottom: 1px solid $header-border;
+    margin-bottom: 15px;
+  }
+  #ui-field {
+    border-bottom: 1px solid $header-border;
+    margin: auto;
+    height: 80px;
+    width: 80%;
   }
   .btn {
-    background-color: lightblue;
+    margin: auto;
+    &#find-doctors {
+      background-color: $find-doctors;
+      width: 70%;
+      &:hover {
+        background-color: $fd-hover;
+        transition: .7s;
+        color: white;
+      }
+    }
+    &#clear-doctors {
+      background-color: $clear-doctors;
+      color: white;
+      width: 70%;
+      margin-left: 140px;
+      margin-top: 17px;
+      display: none;
+      &:hover {
+        background-color: $cd-hover;
+        transition: .7s;
+        color: black;
+      }
+    }
   }
   input {
     text-align: center;
+    margin-bottom: 7px;
+    &.form-control {
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+    }
   }
 }
