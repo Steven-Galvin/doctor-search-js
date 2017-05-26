@@ -9,11 +9,14 @@ $(document).ready(function() {
     $('#symptom').val(" ");
     $('#search-field').hide();
     $('#clear-doctors').show();
+    $('.description').hide();
+    $('#description2').hide();
   });
   $('#clear-doctors').click(function(e) {
     e.preventDefault();
     $('ul').empty();
     $('#search-field').show();
     $('#clear-doctors').hide();
+    $('#description2').show();
   });
 });

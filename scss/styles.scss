@@ -3,16 +3,28 @@ $fd-hover : #44636f;
 $clear-doctors : #8d0736;
 $cd-hover : #c6839a;
 $background : #fcfcf7;
-$header-border : #7e7e7b;
+$header : #979794;
+$header-gradient : #646462;
+$header-text : #fcfcf9;
+$ht-shadow : #323231;
+$header-border : #4b4b4a;
+$default-light-font : white;
+$default-dark-font : black;
 
 body {
   background-color: $background;
+  font-family: 'Lato', sans-serif;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+  }
   #header {
     height: 100px;
     text-align: center;
     padding-top: 10px;
-    background-color: white;
-    border-bottom: 1px solid $header-border;
+    color: $header-text;
+    text-shadow: 2px 2px 4px $ht-shadow;
+    background-image: linear-gradient(to right, $header, $header-gradient);
+    border-bottom: 2px solid $header-border;
     margin-bottom: 15px;
   }
   #ui-field {
@@ -29,12 +41,12 @@ body {
       &:hover {
         background-color: $fd-hover;
         transition: .7s;
-        color: white;
+        color: $default-light-font;
       }
     }
     &#clear-doctors {
       background-color: $clear-doctors;
-      color: white;
+      color: $default-light-font;
       width: 70%;
       margin-left: 140px;
       margin-top: 17px;
@@ -42,7 +54,7 @@ body {
       &:hover {
         background-color: $cd-hover;
         transition: .7s;
-        color: black;
+        color: $default-dark-font;
       }
     }
   }
@@ -54,5 +66,30 @@ body {
       margin-right: auto;
       width: 70%;
     }
+  }
+  #results {
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 87%;
+  }
+  .description {
+    width: 87%;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+  }
+  #description2 {
+    width: 87%;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+    display: none;
+  }
+  .doctor {
+    text-shadow: 1px 1px 1px $header-border;
+  }
+  .info {
+    border-bottom: 1px dotted $header-border;
   }
 }
